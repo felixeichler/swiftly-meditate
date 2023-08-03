@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DC2175752A66807D00F0116F /* meditation_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2175742A66807D00F0116F /* meditation_appApp.swift */; };
-		DC2175772A66807D00F0116F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2175762A66807D00F0116F /* ContentView.swift */; };
+		DC2175772A66807D00F0116F /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2175762A66807D00F0116F /* MeditationView.swift */; };
 		DC2175792A66807F00F0116F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2175782A66807F00F0116F /* Assets.xcassets */; };
 		DC21757C2A66807F00F0116F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC21757B2A66807F00F0116F /* Preview Assets.xcassets */; };
 		DC2175862A66808000F0116F /* meditation_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2175852A66808000F0116F /* meditation_appTests.swift */; };
 		DC2175902A66808000F0116F /* meditation_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21758F2A66808000F0116F /* meditation_appUITests.swift */; };
 		DC2175922A66808000F0116F /* meditation_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2175912A66808000F0116F /* meditation_appUITestsLaunchTests.swift */; };
+		DC4001D02A7B6E4800A07F59 /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4001CF2A7B6E4800A07F59 /* CompletedView.swift */; };
+		DC4001D22A7B738600A07F59 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4001D12A7B738600A07F59 /* MainView.swift */; };
+		DC4001D42A7B7DED00A07F59 /* ChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4001D32A7B7DED00A07F59 /* ChooserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		DC2175712A66807D00F0116F /* meditation app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meditation app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2175742A66807D00F0116F /* meditation_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditation_appApp.swift; sourceTree = "<group>"; };
-		DC2175762A66807D00F0116F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC2175762A66807D00F0116F /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		DC2175782A66807F00F0116F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC21757B2A66807F00F0116F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC2175812A66808000F0116F /* meditation appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meditation appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		DC21758B2A66808000F0116F /* meditation appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meditation appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC21758F2A66808000F0116F /* meditation_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditation_appUITests.swift; sourceTree = "<group>"; };
 		DC2175912A66808000F0116F /* meditation_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditation_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC4001CF2A7B6E4800A07F59 /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		DC4001D12A7B738600A07F59 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DC4001D32A7B7DED00A07F59 /* ChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				DC2175742A66807D00F0116F /* meditation_appApp.swift */,
-				DC2175762A66807D00F0116F /* ContentView.swift */,
+				DC2175762A66807D00F0116F /* MeditationView.swift */,
+				DC4001D12A7B738600A07F59 /* MainView.swift */,
+				DC4001D32A7B7DED00A07F59 /* ChooserView.swift */,
+				DC4001CF2A7B6E4800A07F59 /* CompletedView.swift */,
 				DC2175782A66807F00F0116F /* Assets.xcassets */,
 				DC21757A2A66807F00F0116F /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2175772A66807D00F0116F /* ContentView.swift in Sources */,
+				DC2175772A66807D00F0116F /* MeditationView.swift in Sources */,
+				DC4001D22A7B738600A07F59 /* MainView.swift in Sources */,
+				DC4001D02A7B6E4800A07F59 /* CompletedView.swift in Sources */,
 				DC2175752A66807D00F0116F /* meditation_appApp.swift in Sources */,
+				DC4001D42A7B7DED00A07F59 /* ChooserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
